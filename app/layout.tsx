@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script src="https://feedback-widget-lyart.vercel.app//widget.umd.js"></Script>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -24,6 +26,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Script src="https://feedback-widget-lyart.vercel.app//widget.umd.js"></Script>
+          <my-widget project-id="14"></my-widget>
           {children}
         </ThemeProvider>
       </body>
