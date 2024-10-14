@@ -6,6 +6,14 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      ['my-widget']: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: "Sugata Chanda | Crafting Digital Experiences",
   description: "Modern Portfolio Website of Sugata Chanda",
