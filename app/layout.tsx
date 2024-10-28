@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script src="https://feedback-widget-alpha-orcin.vercel.app/widget.umd.js"></Script>
+      <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -34,7 +34,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Script src="https://feedback-widget-alpha-orcin.vercel.app/widget.umd.js"></Script>
+          <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script>
           <my-widget project-id="14"></my-widget>
           {children}
         </ThemeProvider>
