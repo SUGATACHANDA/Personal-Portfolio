@@ -74,11 +74,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "IntelliLearn",
-    des: "An Online Learning Platform with vast number of courses, simplifying the learning process",
-    img: "./int.svg",
+    title: "TicketMan",
+    des: "An Online Ticket Management Platform, with vast number of events, simplifying the buying process",
+    img: "./ticketman.PNG",
     iconLists: ["./re.svg", "./tail.svg", "./ts.svg", "./pr.svg", "./c.svg",],
-    // link: "/ui.earth.com",
+    link: "",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const projects = [
     des: "Simplify your food ordering with Foodies. An online platform for various cuisinse from reputed restaurants.",
     img: "./fo.svg",
     iconLists: ["./next.svg", "./tail.svg", "./ts.svg", "./c.svg", "./fire.svg"],
-    link: "https://foodies-ruddy.vercel.app",
+    link: "https://ticketman.vercel.app",
   },
   {
     id: 3,

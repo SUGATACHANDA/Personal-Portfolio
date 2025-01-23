@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import Script from "next/script";
+// import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      ['my-widget']: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-    }
-  }
-}
+// declare global {
+//   namespace JSX {
+//     interface IntrinsicElements {
+//       ['my-widget']: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+//     }
+//   }
+// }
 
 export const metadata: Metadata = {
   title: "Sugata Chanda | Crafting Digital Experiences",
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script>
+      {/* <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script> */}
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -34,8 +34,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script>
-          <my-widget project-id="14"></my-widget>
+          {/* <Script src="https://feed-widget-one.vercel.app/widget.umd.js"></Script>
+          <my-widget project-id="14"></my-widget> */}
           {children}
         </ThemeProvider>
       </body>
