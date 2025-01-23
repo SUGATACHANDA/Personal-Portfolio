@@ -196,7 +196,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Pyhton Developer",
+    title: "Python Developer",
     desc: "Developed and maintained variours Python projects using latest python technologies.",
     className: "md:col-span-2",
     thumbnail: "./exp4.svg",
